@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chandrashekar J H M — Data Science Portfolio</title>
+<meta name="description" content="Turning Data into Insights, and Insights into Impact. Portfolio of Chandrashekar J H M.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0F1C;--bg2:#101828;--card:#131C2E;--line:#22304A;--text:#E6EBF5;--mute:#93A1BC;--acc:#2DD4BF;--acc2:#60A5FA;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.tag{color:var(--acc);font:600 .8rem Inter;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:40px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,15,28,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font:700 1.15rem 'Space Grotesk';letter-spacing:.02em}.logo span{color:var(--acc)}
+.links{display:flex;gap:28px;font-size:.92rem;color:var(--mute)}
+.links a:hover{color:var(--acc)}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:64px;
+background:radial-gradient(700px 400px at 80% 20%,rgba(45,212,191,.13),transparent),radial-gradient(600px 400px at 10% 90%,rgba(96,165,250,.12),transparent)}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;opacity:.18;mask-image:radial-gradient(circle at 50% 40%,#000,transparent 70%);-webkit-mask-image:radial-gradient(circle at 50% 40%,#000,transparent 70%)}
+.hero .wrap{position:relative}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:.82rem;color:var(--mute);margin-bottom:24px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px rgba(45,212,191,.2)}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:700;letter-spacing:-.02em}
+.grad{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font:500 clamp(1.1rem,2.5vw,1.5rem) 'Space Grotesk';color:var(--mute);margin:14px 0 18px}
+.hero .quote{max-width:560px;color:var(--mute);font-size:1.08rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{padding:13px 26px;border-radius:12px;font-weight:600;font-size:.95rem;transition:.25s;display:inline-block}
+.btn.p{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121A}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(45,212,191,.28)}
+.btn.s{border:1px solid var(--line);background:var(--card)}.btn.s:hover{border-color:var(--acc);color:var(--acc)}
+.stats{display:flex;gap:40px;margin-top:56px;flex-wrap:wrap}
+.stats b{display:block;font:700 1.8rem 'Space Grotesk';color:var(--text)}.stats span{font-size:.85rem;color:var(--mute)}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+.about p{color:var(--mute);margin-bottom:16px}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.facts div:last-child{border:0}.facts span{color:var(--mute)}
+.alt{background:var(--bg2)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:.3s}
+.sk:hover{border-color:var(--acc);transform:translateY(-4px)}
+.sk h3{font-size:1.05rem;margin-bottom:16px;color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:.82rem;padding:5px 12px;border-radius:99px;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.22);color:#C5D9F7}
+.tl{position:relative;padding-left:30px;border-left:2px solid var(--line);display:grid;gap:28px}
+.item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.item:before{content:"";position:absolute;left:-38px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--acc);border:3px solid var(--bg)}
+.alt .item:before{border-color:var(--bg2)}
+.item small{color:var(--acc);font-weight:600;letter-spacing:.04em}
+.item h3{font-size:1.2rem;margin:6px 0 2px}.item .org{color:var(--mute);font-size:.95rem;margin-bottom:10px}
+.item li{color:var(--mute);margin-left:18px;font-size:.94rem}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px}
+.pr{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;transition:.3s}
+.pr:hover{border-color:var(--acc);transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.pr .top{display:flex;justify-content:space-between;color:var(--mute);font-size:.8rem;margin-bottom:16px}
+.pr h3{font-size:1.2rem;margin-bottom:10px}.pr p{color:var(--mute);font-size:.94rem;flex:1}
+.pr .chips{margin:18px 0}.pr .go{color:var(--acc);font-weight:600;font-size:.9rem}
+.contact{text-align:center}
+.contact p{color:var(--mute);max-width:520px;margin:-16px auto 36px}
+.cl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cl a{display:flex;flex-direction:column;gap:2px;min-width:230px;padding:20px 26px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);text-align:left;transition:.3s}
+.cl a:hover{border-color:var(--acc);transform:translateY(-4px)}
+.cl small{color:var(--mute);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}.cl b{font-weight:500;word-break:break-all}
+footer{text-align:center;padding:32px;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2));z-index:60}
+@media(max-width:820px){
+.burger{display:block}
+.links{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .35s}
+.links.open{max-height:420px}.links a{padding:16px 24px;border-top:1px solid var(--line)}
+.about{grid-template-columns:1fr}section{padding:72px 0}.stats{gap:28px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap">
+<a href="#home" class="logo">CJ<span>.</span>HM</a>
+<button class="burger" id="bg" aria-label="Menu">☰</button>
+<div class="links" id="lk">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div class="pill"><i></i> Open to internships &amp; entry-level roles</div>
+<h1>Chandrashekar<br><span class="grad">J H M</span></h1>
+<div class="role">Data Science &amp; Analytics Intern</div>
+<p class="quote">“Turning Data into Insights, and Insights into Impact.”</p>
+<div class="cta"><a class="btn p" href="#projects">View My Work</a><a class="btn s" href="#contact">Get in Touch</a></div>
+<div class="stats"><div><b>7</b><span>Public projects</span></div><div><b>3</b><span>Internships</span></div><div><b>ML · NLP · CV</b><span>Focus areas</span></div></div>
+</div></header>
+
+<section id="about"><div class="wrap">
+<div class="tag rv">About Me</div><h2 class="rv">Analytical mind, builder’s mindset.</h2>
+<div class="about">
+<div class="rv">
+<p>I’m a data-driven intern who enjoys turning raw, messy data into clear answers. My work spans the full workflow — cleaning and exploring data, engineering features, training and evaluating machine learning models, and communicating findings through clear dashboards.</p>
+<p>I’ve built projects in NLP, computer vision and machine learning, from resume screening to fake-account detection, always with an eye on the business question behind the numbers.</p>
+<p>I’m looking for opportunities to apply statistics and ML to real problems and learn from strong teams.</p>
+</div>
+<div class="facts rv">
+<div><span>Location</span><b>Ballari, India</b></div>
+<div><span>Role</span><b>Intern</b></div>
+<div><span>Focus</span><b>Data · ML · Analytics</b></div>
+<div><span>Email</span><b style="word-break:break-all">chandrashekarjhm@gmail.com</b></div>
+</div></div></div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+<div class="tag rv">Skills</div><h2 class="rv">Tools &amp; strengths</h2>
+<div class="skills">
+<div class="sk rv"><h3>Programming &amp; Data</h3><div class="chips"><span>Python</span><span>SQL</span><span>Data Cleaning</span><span>EDA</span><span>Git/GitHub</span></div></div>
+<div class="sk rv"><h3>Statistics &amp; Math</h3><div class="chips"><span>Statistics</span><span>Probability</span><span>Model Evaluation</span></div></div>
+<div class="sk rv"><h3>Machine Learning</h3><div class="chips"><span>Machine Learning</span><span>Feature Engineering</span><span>Deep Learning</span><span>NLP</span></div></div>
+<div class="sk rv"><h3>Visualization &amp; BI</h3><div class="chips"><span>Data Visualization</span><span>Power BI</span><span>Tableau</span></div></div>
+<div class="sk rv"><h3>Professional</h3><div class="chips"><span>Problem Solving</span><span>Critical Thinking</span><span>Communication</span><span>Business Understanding</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="tag rv">Experience</div><h2 class="rv">Work experience</h2>
+<div class="tl">
+<div class="item rv"><small>AUG 2026 — PRESENT</small><h3>AI / ML Intern</h3><div class="org">Elythra Edufyi Tech Solutions · Bengaluru · Remote</div>
+<ul><li>Built an AI resume screening system using NLP and machine learning.</li><li>Implemented TF-IDF and cosine similarity for resume–job matching.</li><li>Created a weighted scoring system using skills, education, experience and NLP similarity.</li><li>Developed a Streamlit web app supporting PDF, DOCX and TXT resumes.</li><li>Built a face identification system for 5 Indian cricket players.</li><li>Used MTCNN + FaceNet for face detection and feature extraction.</li><li>Trained a Linear SVM classifier for player identification.</li><li>Developed a Streamlit app for image-based predictions.</li><li>Built a Python Q&amp;A chatbot using a 35-entry predefined knowledge base, TF-IDF and cosine similarity, with confidence-based matching and unsupported-question handling, deployed as an interactive Streamlit app.</li></ul><div class="chips" style="margin-top:16px"><span>Python</span><span>NLP</span><span>Machine Learning</span><span>Scikit-learn</span><span>TF-IDF</span><span>Cosine Similarity</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>Git/GitHub</span><span>Computer Vision</span><span>Face Recognition</span><span>FaceNet</span><span>MTCNN</span><span>SVM</span><span>PIL</span><span>Pytest</span></div></div>
+<div class="item rv"><small>APR 2026 — PRESENT</small><h3>Data Science Intern</h3><div class="org">ExcelR · Bengaluru · Remote</div>
+<ul><li>Built an Alzheimer’s disease classification model using medical imaging data.</li><li>Preprocessed brain images and classified disease stages.</li><li>Evaluated model performance for automated classification.</li><li>Built a machine-learning system that analyzes historical hourly electricity consumption and forecasts energy demand for the next 30 days.</li></ul><div class="chips" style="margin-top:16px"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span><span>Jupyter Notebook</span><span>Time Series Forecasting</span><span>Random Forest</span><span>Gradient Boosting</span><span>Feature Engineering</span><span>Data Visualization</span><span>Streamlit</span></div></div>
+<div class="item rv"><small>FEB 2026 — MAY 2026</small><h3>Intern</h3><div class="org">Contriver · Bengaluru · On-site</div>
+<ul><li>Built a city-scale digital twin with 7+ urban data modules.</li><li>Developed interactive GIS maps and dashboards for urban analysis.</li><li>Integrated flood, weather, infrastructure, transport and public-service data.</li></ul><div class="chips" style="margin-top:16px"><span>React</span><span>JavaScript</span><span>GIS</span><span>Google Maps API</span><span>Node.js</span><span>PostgreSQL</span><span>Git/GitHub</span></div></div>
+</div></div></section>
+
+<section id="projects" class="alt"><div class="wrap">
+<div class="tag rv">Projects</div><h2 class="rv">Selected work</h2>
+<div class="proj">
+<a class="pr rv" href="https://github.com/Chandujhm/AI-Resume-Screening" target="_blank" rel="noopener"><div class="top"><span>NLP · ML</span><span>Jupyter</span></div><h3>AI Resume Screening</h3><p>AI-powered resume screening and candidate ranking using TF-IDF and cosine similarity, with a weighted score across skills, education and experience. Streamlit app supports PDF, DOCX and TXT.</p><div class="chips"><span>Python</span><span>NLP</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Fake-Social-Media-Accounts-And-Their-Detection" target="_blank" rel="noopener"><div class="top"><span>Classification</span><span>Jupyter</span></div><h3>Fake Social Media Account Detection</h3><p>Machine learning system built with Python and Flask that detects fake accounts through behavioural analysis, using engineered engagement features.</p><div class="chips"><span>Python</span><span>Flask</span><span>Feature Engineering</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Indian_Cricket_Team_Face_Identification" target="_blank" rel="noopener"><div class="top"><span>Computer Vision</span><span>Python</span></div><h3>Indian Cricket Team Face Identification</h3><p>Face identification system for 5 Indian cricket players. MTCNN detects faces, FaceNet extracts features, and a Linear SVM identifies the player, served through a Streamlit app for image-based predictions.</p><div class="chips"><span>MTCNN</span><span>FaceNet</span><span>SVM</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Smart-City-Digital-Twin-Simulator" target="_blank" rel="noopener"><div class="top"><span>Data Visualization</span><span>JavaScript</span></div><h3>Smart City Digital Twin Simulator</h3><p>Interactive city-scale digital twin for flood impact analysis, real-time data visualization and urban infrastructure monitoring.</p><div class="chips"><span>JavaScript</span><span>GIS</span><span>Google Maps API</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/alzimers-disease-" target="_blank" rel="noopener"><div class="top"><span>Deep Learning</span><span>Python</span></div><h3>Alzheimer’s Disease Classification</h3><p>Classification model that identifies Alzheimer’s disease stages from preprocessed brain imaging data, with performance evaluation for automated classification.</p><div class="chips"><span>TensorFlow</span><span>Keras</span><span>Medical Imaging</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Hourly-Energy-Consumption-Forecast" target="_blank" rel="noopener"><div class="top"><span>Time Series · ML</span><span>Python</span></div><h3>Hourly Energy Consumption Forecasting</h3><p>Machine-learning system that analyzes historical hourly electricity consumption and forecasts energy demand for the next 30 days, using Random Forest and Gradient Boosting with engineered time features.</p><div class="chips"><span>Random Forest</span><span>Gradient Boosting</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Personal-Python-Question-Answering-Chatbot" target="_blank" rel="noopener"><div class="top"><span>NLP</span><span>Python</span></div><h3>Personal Python Q&amp;A Chatbot</h3><p>Q&amp;A chatbot built on a 35-entry knowledge base using TF-IDF and cosine similarity, with confidence-based matching, unsupported-question handling, and an interactive Streamlit app.</p><div class="chips"><span>TF-IDF</span><span>Streamlit</span><span>Pytest</span></div><span class="go">View on GitHub →</span></a>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<div class="tag rv">Education</div><h2 class="rv">Academic background</h2>
+<div class="tl">
+<div class="item rv"><small>NOVEMBER 2022 — JULY 2026</small><h3>B.E. in Computer Science Engineering</h3><div class="org">Rao Bahadur Y. Mahabaleswarappa Engineering College · Ballari</div></div>
+</div></div></section>
+
+<section id="contact" class="alt contact"><div class="wrap">
+<div class="tag rv">Contact</div><h2 class="rv">Let’s work together</h2>
+<p class="rv">Have an opportunity, a dataset or an idea? I’d love to hear from you.</p>
+<div class="cl rv">
+<a href="mailto:chandrashekarjhm@gmail.com"><small>Email</small><b>chandrashekarjhm@gmail.com</b></a>
+<a href="https://www.linkedin.com/in/chandujhm6363" target="_blank" rel="noopener"><small>LinkedIn</small><b>in/chandujhm6363</b></a>
+<a href="https://github.com/Chandujhm" target="_blank" rel="noopener"><small>GitHub</small><b>github.com/Chandujhm</b></a>
+</div></div></section>
+
+<footer>© <span id="yr"></span> Chandrashekar J H M · Ballari, India</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const lk=document.getElementById('lk');
+document.getElementById('bg').onclick=()=>lk.classList.toggle('open');
+lk.querySelectorAll('a').forEach(a=>a.onclick=()=>lk.classList.remove('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+</script>
+</body>
+</html>
