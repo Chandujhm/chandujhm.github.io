@@ -65,6 +65,8 @@ background:radial-gradient(700px 400px at 80% 20%,rgba(45,212,191,.13),transpare
 .pr:hover{border-color:var(--acc);transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
 .pr .top{display:flex;justify-content:space-between;color:var(--mute);font-size:.8rem;margin-bottom:16px}
 .pr h3{font-size:1.2rem;margin-bottom:10px}.pr p{color:var(--mute);font-size:.94rem;flex:1}
+.pr .fields{flex:1;display:grid;gap:6px;font-size:.86rem;color:var(--mute)}
+.pr .fields b{color:#C5D9F7;font-weight:600}
 .pr .chips{margin:18px 0}.pr .go{color:var(--acc);font-weight:600;font-size:.9rem}
 .contact{text-align:center}
 .contact p{color:var(--mute);max-width:520px;margin:-16px auto 36px}
@@ -99,7 +101,7 @@ footer{text-align:center;padding:32px;color:var(--mute);font-size:.85rem;border-
 <div class="role">Data Science &amp; Analytics Intern</div>
 <p class="quote">“Turning Data into Insights, and Insights into Impact.”</p>
 <div class="cta"><a class="btn p" href="#projects">View My Work</a><a class="btn s" href="#contact">Get in Touch</a></div>
-<div class="stats"><div><b>7</b><span>Public projects</span></div><div><b>3</b><span>Internships</span></div><div><b>ML · NLP · CV</b><span>Focus areas</span></div></div>
+<div class="stats"><div><b>6</b><span>Public projects</span></div><div><b>3</b><span>Internships</span></div><div><b>ML · NLP · CV</b><span>Focus areas</span></div></div>
 </div></header>
 
 <section id="about"><div class="wrap">
@@ -130,24 +132,71 @@ footer{text-align:center;padding:32px;color:var(--mute);font-size:.85rem;border-
 <section id="experience"><div class="wrap">
 <div class="tag rv">Experience</div><h2 class="rv">Work experience</h2>
 <div class="tl">
-<div class="item rv"><small>AUG 2026 — PRESENT</small><h3>AI / ML Intern</h3><div class="org">Elythra Edufyi Tech Solutions · Bengaluru · Remote</div>
+<div class="item rv"><small>AUG 2026 — PRESENT</small><h3>AI/ML &amp; Data Science Intern</h3><div class="org">Elythra Edufyi Tech Solutions · Bengaluru · Remote</div>
 <ul><li>Built an AI resume screening system using NLP and machine learning.</li><li>Implemented TF-IDF and cosine similarity for resume–job matching.</li><li>Created a weighted scoring system using skills, education, experience and NLP similarity.</li><li>Developed a Streamlit web app supporting PDF, DOCX and TXT resumes.</li><li>Built a face identification system for 5 Indian cricket players.</li><li>Used MTCNN + FaceNet for face detection and feature extraction.</li><li>Trained a Linear SVM classifier for player identification.</li><li>Developed a Streamlit app for image-based predictions.</li><li>Built a Python Q&amp;A chatbot using a 35-entry predefined knowledge base, TF-IDF and cosine similarity, with confidence-based matching and unsupported-question handling, deployed as an interactive Streamlit app.</li></ul><div class="chips" style="margin-top:16px"><span>Python</span><span>NLP</span><span>Machine Learning</span><span>Scikit-learn</span><span>TF-IDF</span><span>Cosine Similarity</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>Git/GitHub</span><span>Computer Vision</span><span>Face Recognition</span><span>FaceNet</span><span>MTCNN</span><span>SVM</span><span>PIL</span><span>Pytest</span></div></div>
-<div class="item rv"><small>APR 2026 — PRESENT</small><h3>Data Science Intern</h3><div class="org">ExcelR · Bengaluru · Remote</div>
+<div class="item rv"><small>APR 2026 — PRESENT</small><h3>Data Science Intern</h3><div class="org">AI Variant · Bengaluru · Remote</div>
 <ul><li>Built an Alzheimer’s disease classification model using medical imaging data.</li><li>Preprocessed brain images and classified disease stages.</li><li>Evaluated model performance for automated classification.</li><li>Built a machine-learning system that analyzes historical hourly electricity consumption and forecasts energy demand for the next 30 days.</li></ul><div class="chips" style="margin-top:16px"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span><span>Jupyter Notebook</span><span>Time Series Forecasting</span><span>Random Forest</span><span>Gradient Boosting</span><span>Feature Engineering</span><span>Data Visualization</span><span>Streamlit</span></div></div>
-<div class="item rv"><small>FEB 2026 — MAY 2026</small><h3>Intern</h3><div class="org">Contriver · Bengaluru · On-site</div>
+<div class="item rv"><small>FEB 2026 — MAY 2026</small><h3>Web Development &amp; Data Science Intern</h3><div class="org">Contriver · Bengaluru · On-site</div>
 <ul><li>Built a city-scale digital twin with 7+ urban data modules.</li><li>Developed interactive GIS maps and dashboards for urban analysis.</li><li>Integrated flood, weather, infrastructure, transport and public-service data.</li></ul><div class="chips" style="margin-top:16px"><span>React</span><span>JavaScript</span><span>GIS</span><span>Google Maps API</span><span>Node.js</span><span>PostgreSQL</span><span>Git/GitHub</span></div></div>
 </div></div></section>
 
 <section id="projects" class="alt"><div class="wrap">
 <div class="tag rv">Projects</div><h2 class="rv">Selected work</h2>
 <div class="proj">
-<a class="pr rv" href="https://github.com/Chandujhm/AI-Resume-Screening" target="_blank" rel="noopener"><div class="top"><span>NLP · ML</span><span>Jupyter</span></div><h3>AI Resume Screening</h3><p>AI-powered resume screening and candidate ranking using TF-IDF and cosine similarity, with a weighted score across skills, education and experience. Streamlit app supports PDF, DOCX and TXT.</p><div class="chips"><span>Python</span><span>NLP</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/Fake-Social-Media-Accounts-And-Their-Detection" target="_blank" rel="noopener"><div class="top"><span>Classification</span><span>Jupyter</span></div><h3>Fake Social Media Account Detection</h3><p>Machine learning system built with Python and Flask that detects fake accounts through behavioural analysis, using engineered engagement features.</p><div class="chips"><span>Python</span><span>Flask</span><span>Feature Engineering</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/Indian_Cricket_Team_Face_Identification" target="_blank" rel="noopener"><div class="top"><span>Computer Vision</span><span>Python</span></div><h3>Indian Cricket Team Face Identification</h3><p>Face identification system for 5 Indian cricket players. MTCNN detects faces, FaceNet extracts features, and a Linear SVM identifies the player, served through a Streamlit app for image-based predictions.</p><div class="chips"><span>MTCNN</span><span>FaceNet</span><span>SVM</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/Smart-City-Digital-Twin-Simulator" target="_blank" rel="noopener"><div class="top"><span>Data Visualization</span><span>JavaScript</span></div><h3>Smart City Digital Twin Simulator</h3><p>Interactive city-scale digital twin for flood impact analysis, real-time data visualization and urban infrastructure monitoring.</p><div class="chips"><span>JavaScript</span><span>GIS</span><span>Google Maps API</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/alzimers-disease-" target="_blank" rel="noopener"><div class="top"><span>Deep Learning</span><span>Python</span></div><h3>Alzheimer’s Disease Classification</h3><p>Classification model that identifies Alzheimer’s disease stages from preprocessed brain imaging data, with performance evaluation for automated classification.</p><div class="chips"><span>TensorFlow</span><span>Keras</span><span>Medical Imaging</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/Hourly-Energy-Consumption-Forecast" target="_blank" rel="noopener"><div class="top"><span>Time Series · ML</span><span>Python</span></div><h3>Hourly Energy Consumption Forecasting</h3><p>Machine-learning system that analyzes historical hourly electricity consumption and forecasts energy demand for the next 30 days, using Random Forest and Gradient Boosting with engineered time features.</p><div class="chips"><span>Random Forest</span><span>Gradient Boosting</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
-<a class="pr rv" href="https://github.com/Chandujhm/Personal-Python-Question-Answering-Chatbot" target="_blank" rel="noopener"><div class="top"><span>NLP</span><span>Python</span></div><h3>Personal Python Q&amp;A Chatbot</h3><p>Q&amp;A chatbot built on a 35-entry knowledge base using TF-IDF and cosine similarity, with confidence-based matching, unsupported-question handling, and an interactive Streamlit app.</p><div class="chips"><span>TF-IDF</span><span>Streamlit</span><span>Pytest</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/AI-Resume-Screening" target="_blank" rel="noopener"><div class="top"><span>NLP · ML</span><span>Jupyter</span></div><h3>AI Resume Screening</h3>
+<div class="fields">
+<div><b>Objective:</b> Automate and speed up resume screening for recruiters.</div>
+<div><b>Tools Used:</b> Python, NLP (TF-IDF, cosine similarity), Scikit-learn, Streamlit</div>
+<div><b>Business Need:</b> Reduce manual screening time and inconsistent shortlisting.</div>
+<div><b>Solution:</b> Weighted scoring engine combining skills, education and experience match; deployed as a Streamlit app supporting PDF/DOCX/TXT.</div>
+<div><b>Conclusion:</b> Enabled faster, more consistent candidate shortlisting for recruiters.</div>
+</div>
+<div class="chips"><span>Python</span><span>NLP</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Fake-Social-Media-Accounts-And-Their-Detection" target="_blank" rel="noopener"><div class="top"><span>Classification</span><span>Jupyter</span></div><h3>Fake Social Media Account Detection</h3>
+<div class="fields">
+<div><b>Objective:</b> Detect fake/bot social media accounts.</div>
+<div><b>Tools Used:</b> Python, Machine Learning, Flask</div>
+<div><b>Business Need:</b> Improve platform trust &amp; safety by filtering fake accounts.</div>
+<div><b>Solution:</b> Engineered behavioural features (follower-following ratio, posting frequency, engagement) and trained classifiers (~85% accuracy); deployed via Flask for real-time detection.</div>
+<div><b>Conclusion:</b> Delivered a real-time tool to help reduce fake-account-driven platform abuse.</div>
+</div>
+<div class="chips"><span>Python</span><span>Flask</span><span>Feature Engineering</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Smart-City-Digital-Twin-Simulator" target="_blank" rel="noopener"><div class="top"><span>Data Visualization</span><span>JavaScript</span></div><h3>Smart City Digital Twin Simulator</h3>
+<div class="fields">
+<div><b>Objective:</b> Simulate and visualize city-scale urban infrastructure data.</div>
+<div><b>Tools Used:</b> React.js, JavaScript, GIS, Google Maps API, Node.js, PostgreSQL</div>
+<div><b>Business Need:</b> Support data-driven urban planning decisions.</div>
+<div><b>Solution:</b> Interactive digital twin covering 7+ urban data modules (flood, weather, infrastructure, transport, public services) with real-time GIS dashboards.</div>
+<div><b>Conclusion:</b> Gave planners a single dashboard to monitor and make informed city-management decisions.</div>
+</div>
+<div class="chips"><span>JavaScript</span><span>GIS</span><span>Google Maps API</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/alzimers-disease-" target="_blank" rel="noopener"><div class="top"><span>Deep Learning</span><span>Python</span></div><h3>Alzheimer’s Disease Classification</h3>
+<div class="fields">
+<div><b>Objective:</b> Classify Alzheimer’s disease stages from brain imaging.</div>
+<div><b>Tools Used:</b> Python, TensorFlow, Keras, Medical Imaging</div>
+<div><b>Business Need:</b> Support early, automated diagnosis assistance.</div>
+<div><b>Solution:</b> Deep learning classifier on preprocessed brain imaging data with performance evaluation.</div>
+<div><b>Conclusion:</b> Delivered a proof-of-concept tool to help flag disease stages faster.</div>
+</div>
+<div class="chips"><span>TensorFlow</span><span>Keras</span><span>Medical Imaging</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Hourly-Energy-Consumption-Forecast" target="_blank" rel="noopener"><div class="top"><span>Time Series · ML</span><span>Python</span></div><h3>Hourly Energy Consumption Forecasting</h3>
+<div class="fields">
+<div><b>Objective:</b> Forecast the next 30 days of hourly electricity demand.</div>
+<div><b>Tools Used:</b> Python, Random Forest, Gradient Boosting, Streamlit</div>
+<div><b>Business Need:</b> Help utilities plan supply and avoid shortages/overproduction.</div>
+<div><b>Solution:</b> Time-series ML pipeline on historical hourly consumption data, visualized via a Streamlit dashboard.</div>
+<div><b>Conclusion:</b> Gave utilities a forward-looking demand forecast to support supply planning.</div>
+</div>
+<div class="chips"><span>Random Forest</span><span>Gradient Boosting</span><span>Streamlit</span></div><span class="go">View on GitHub →</span></a>
+<a class="pr rv" href="https://github.com/Chandujhm/Personal-Python-Question-Answering-Chatbot" target="_blank" rel="noopener"><div class="top"><span>NLP</span><span>Python</span></div><h3>Personal Python Q&amp;A Chatbot</h3>
+<div class="fields">
+<div><b>Objective:</b> Provide instant answers to common Python questions.</div>
+<div><b>Tools Used:</b> Python, NLTK, TF-IDF, Streamlit</div>
+<div><b>Business Need:</b> Reduce time spent searching for answers to repetitive Python questions.</div>
+<div><b>Solution:</b> Chatbot on a 35-entry knowledge base using TF-IDF and cosine similarity with confidence-based matching and graceful unsupported-question handling.</div>
+<div><b>Conclusion:</b> Delivered a quick self-serve support tool for common Python queries.</div>
+</div>
+<div class="chips"><span>TF-IDF</span><span>Streamlit</span><span>Pytest</span></div><span class="go">View on GitHub →</span></a>
 </div></div></section>
 
 <section id="education"><div class="wrap">
